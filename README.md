@@ -28,6 +28,10 @@ export default class App extends Component {
     super();
   }
 
+  _onValueChange = (hour, minute) => {
+    console.log("Selected time:", hour, ':', minute);
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -35,7 +39,8 @@ export default class App extends Component {
         style={styles.picker}
         selectedHour={4}
         selectedMinute={30}
-        minuteInterval={5} />
+        minuteInterval={5}
+        onValueChange={this._onValueChange} />
       </View>
     );
   }
