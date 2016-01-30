@@ -2,7 +2,7 @@
 
 ### Screenshots
 
-![Screenshot](https://cloud.githubusercontent.com/assets/1790265/12698593/6aef481e-c7a9-11e5-99b3-e7df38bc8c9b.png =300x)
+![](https://cloud.githubusercontent.com/assets/1790265/12698593/6aef481e-c7a9-11e5-99b3-e7df38bc8c9b.png =300x)
 
 ### Installation
 
