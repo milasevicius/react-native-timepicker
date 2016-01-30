@@ -1,4 +1,5 @@
 # React Native TimePicker For iOS
+React native custom timepicker (24 hours format) for iOS
 
 ### Screenshots
 
