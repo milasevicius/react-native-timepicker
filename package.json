@@ -1,6 +1,7 @@
 {
   "name": "react-native-timepicker",
   "version": "1.0.0",
-  "scripts": {},
-  "main": "index.ios.js"
+  "main": "index.ios.js",
+  "author": "Rokas Milasevicius <rokas@milasevicius.com> (http://milasevicius.com)",
+  "license": "MIT"
 }
