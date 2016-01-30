@@ -30,10 +30,7 @@ export default class TimePicker extends Component {
 
 	_onValueChangeCallback = () => {
 		if ('onValueChange' in this.props) {
-			this.props.onValueChange({
-				hour: this.state.selectedHour,
-				minute: this.state.selectedMinute
-			});
+			this.props.onValueChange(this.state.selectedHour, this.state.selectedMinute);
 		}
 	};
 
