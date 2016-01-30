@@ -65,7 +65,7 @@ export default class TimePicker extends Component {
 		}
 
 		return (
-			<View style={styles.container}>
+			<View style={[styles.container, this.props.style]}>
 				<PickerIOS style={styles.picker}
 					selectedValue={this.state.selectedHour}
 					onValueChange={this._setHour}>
@@ -84,7 +84,6 @@ export default class TimePicker extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
 		flexDirection: 'row'
 	},
 
