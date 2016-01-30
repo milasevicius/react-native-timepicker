@@ -2,7 +2,7 @@
 
 ### Screenshots
 
-![](milasevicius.com/github/timepicker/demo.png =300x)
+![](http://milasevicius.com/github/timepicker/demo.png =300x)
 
 ### Installation
 
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('App', () => App);
 ```
 
-#### Properties - Basic
+### Properties - Basic
 
 | Prop  | Default  | Type | Description |
 | :------------ |:---------------:| :---------------:| :-----|
