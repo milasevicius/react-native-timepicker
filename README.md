@@ -3,7 +3,7 @@ React native custom timepicker (24 hours format) for iOS
 
 ### Screenshots
 
-![Screenshot](https://cloud.githubusercontent.com/assets/1790265/12698623/4d99f092-c7aa-11e5-82bf-f174a1626dbc.png)
+![screenshot](https://cloud.githubusercontent.com/assets/1790265/12737599/9714fd66-c962-11e5-8995-544b82da6f2c.png)
 
 ### Installation
 
@@ -37,10 +37,11 @@ export default class App extends Component {
       <View style={styles.container}>
         <TimePicker
         style={styles.picker}
-        selectedHour={4}
+        selectedHour={0}
         selectedMinute={30}
         minuteInterval={5}
-        onValueChange={this._onValueChange} />
+        onValueChange={this._onValueChange}
+        loop={true} />
       </View>
     );
   }
@@ -66,7 +67,8 @@ AppRegistry.registerComponent('App', () => App);
 | :------------ |:---------------:| :---------------:| :-----|
 | selectedHour | 0 | `number` | Set default hour |
 | selectedMinute | 0 | `number` | Set default minute |
-| minuteInterval | 1 | `number` | The interval at which minutes can be selected |
+| minuteInterval | 1 | `number` | Set interval at which minutes can be selected |
+| loop | false | `bool` | Set component wrap around property |
 | style | {...} | `style` | Set style for timepicker container |
 
 ### Properties - Methods
