@@ -58,9 +58,9 @@ export default class TimePicker extends Component {
 		return m % 60;
 	};
 
-	_onValueChangeCallback = () => {
+	_onValueChangeCallback = (hour, minute) => {
 		if ('onValueChange' in this.props) {
-			this.props.onValueChange(this._getHourValue(this.state.selectedHour), this._getMinuteValue(this.state.selectedMinute));
+			this.props.onValueChange(hour, minute);
 		}
 	};
 
@@ -69,7 +69,7 @@ export default class TimePicker extends Component {
 			selectedHour: hour
 		});
 
-		this._onValueChangeCallback();
+		this._onValueChangeCallback(this._getHourValue(hour), this._getMinuteValue(this.state.selectedMinute));
 	};
 
 	_setMinute = (minute) => {
@@ -77,7 +77,7 @@ export default class TimePicker extends Component {
 			selectedMinute: minute
 		});
 
-		this._onValueChangeCallback();
+		this._onValueChangeCallback(this._getHourValue(this.state.selectedHour), this._getMinuteValue(minute));
 	};
 
 	render() {
