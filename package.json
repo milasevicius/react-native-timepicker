@@ -1,8 +1,19 @@
 {
-  "name": "react-native-timepicker",
-  "version": "1.0.3",
+  "name": "@athletiscope/react-native-timepicker",
+  "version": "0.0.2",
   "main": "index.ios.js",
-  "author": "Rokas Milasevicius <rokas@milasevicius.com> (http://milasevicius.com)",
-  "repository": "milasevicius/react-native-timepicker",
-  "license": "MIT"
+  "author": "Athletigen Inc.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goredefex/react-native-timepicker"
+  },
+  "license": "MIT",
+  "description": "React native custom timepicker (24 hours format) for iOS",
+  "bugs": {
+    "url": "https://github.com/goredefex/react-native-timepicker/issues"
+  },
+  "homepage": "https://github.com/goredefex/react-native-timepicker#readme",
+  "scripts": {
+    "test": "test"
+  }
 }

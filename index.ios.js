@@ -1,12 +1,16 @@
 'use strict';
 
 import React, { Component } from 'react';
-import {
+
+import 
+{
 	AppRegistry,
 	View,
 	PickerIOS,
-	StyleSheet
+	StyleSheet,
+
 } from 'react-native';
+
 
 export default class TimePicker extends Component {
 	constructor(props) {
@@ -58,9 +62,12 @@ export default class TimePicker extends Component {
 		return m % 60;
 	};
 
-	_onValueChangeCallback = (hour, minute) => {
+	_onValueChangeCallback = (newHour, newMin) => {
 		if ('onValueChange' in this.props) {
-			this.props.onValueChange(hour, minute);
+			this.props.onValueChange(
+				this._getHourValue((newHour !== null) ? newHour : this.state.selectedHour),
+				this._getMinuteValue((newMin !== null) ? newMin : this.state.selectedMinute)
+			);
 		}
 	};
 
@@ -69,7 +76,7 @@ export default class TimePicker extends Component {
 			selectedHour: hour
 		});
 
-		this._onValueChangeCallback(this._getHourValue(hour), this._getMinuteValue(this.state.selectedMinute));
+		this._onValueChangeCallback(hour, null);
 	};
 
 	_setMinute = (minute) => {
@@ -77,7 +84,7 @@ export default class TimePicker extends Component {
 			selectedMinute: minute
 		});
 
-		this._onValueChangeCallback(this._getHourValue(this.state.selectedHour), this._getMinuteValue(minute));
+		this._onValueChangeCallback(null, minute);
 	};
 
 	render() {
